@@ -40,18 +40,18 @@ systemctl enable zabbix-server zabbix-agent apache2
 * Cкриншот лога zabbix agent
 ![alt text](https://github.com/mxssclxck/hw-9.2/blob/main/img/3.png)
 
-* Cкриншот раздела Monitoring > Latest data для обоих хостов
+* Cкриншот раздела Monitoring > Latest data для обоих хостов на хостах net1 и net2
 ![alt text](https://github.com/mxssclxck/hw-9.2/blob/main/img/4.png)
 
 ```Shell
-# Устанавливаем  репозиторий Zabbix
+# Устанавливаем  репозиторий Zabbix на хостах net1 и net2
 rpm -Uvh https://repo.zabbix.com/zabbix/6.0/rhel/7/x86_64/zabbix-release-6.0-4.el7.noarch.rpm
 yum clean all
 
-# Устанавливаем Zabbix Agent2
+# Устанавливаем Zabbix Agent2 на хостах net1 и net2
 yum install zabbix-agent2 zabbix-agent2-plugin-*
 
-# Запускаем процесс Zabbix Agent2 и добавляем в авто загрузку
+# Запускаем процесс Zabbix Agent2 и добавляем в авто загрузку на хостах net1 и net2
 systemctl restart zabbix-agent2
 systemctl enable zabbix-agent2
 
